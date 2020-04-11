@@ -1,0 +1,71 @@
+* {
+  font-family: 'Doppio One', sans-serif;
+  color: #4e4e4e !important;
+}
+
+h1 {
+  color: #59AAA5 !important;
+}
+h5 {
+  color: #f9f9f9 !important;
+  font-size: xx-large;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 10px 10px;
+  transition: 0.8s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.navbar-show {
+  background-color: whitesmoke !important;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('./img/workbench.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-section {
+  padding: 6rem 0;
+}
+
+.carousel-control-prev{
+  left: -5rem !important;
+}
+.carousel-control-next{
+  right: -5rem !important;
+}
+
+.brand-color{
+  color: #59AAA5 !important;
+}
+
+.bg-brand{
+  background-color: #59AAA5 !important;
+
+}
