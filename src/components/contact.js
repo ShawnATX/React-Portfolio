@@ -25,7 +25,7 @@ const Contact = (props) => {
                         </a>
                     </div>
                     <div className="col-lg-4 text-center mx-auto mb-5">
-                        <a href="https://www.linkedin.com/in/shawn-wright-b8331865/" target="_blank" rel="noopener noreferrer">
+                        <a href="www.linkedin.com/in/shawn-t-wright" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-linkedin fa-3x"></i>
                         </a>
                     </div>
