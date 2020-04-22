@@ -11,9 +11,9 @@ const Projects = (props) => {
             icon: "fas fa-cocktail fa-4x"
         },
         {
-            link: "https://mighty-journey-05291.herokuapp.com/",
-            name: "Online Art Gallery",
-            subtitle: "Take a digital stroll.",
+            link: "https://fantasy-bazaar.herokuapp.com/",
+            name: "Fantasy Bazaar",
+            subtitle: "React PWA for Tabletop RPG games",
             icon: "fas fa-palette fa-4x"
         },
         {
