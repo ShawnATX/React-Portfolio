@@ -3,18 +3,19 @@ import ProjectSlide from "./projectSlide";
 
 
 const Projects = (props) => {
-    const [projectsState, setProjectsState] = useState([
+    //can use state to populate projects from external source in future
+    const [projectsState] = useState([
+        {
+            link: "https://fantasy-bazaar.herokuapp.com/",
+            name: "Fantasy Bazaar",
+            subtitle: "React PWA for Tabletop RPG games",
+            icon: "fas fa-store-alt fa-4x"
+        },
         {
             link: "https://shawnatx.github.io/project-1/",
             name: "Cocktail Bar",
             subtitle: "Fancy trying a new drink?",
             icon: "fas fa-cocktail fa-4x"
-        },
-        {
-            link: "https://fantasy-bazaar.herokuapp.com/",
-            name: "Fantasy Bazaar",
-            subtitle: "React PWA for Tabletop RPG games",
-            icon: "fas fa-palette fa-4x"
         },
         {
             link: "https://shawnatx.github.io/Daily-Scheduler/",

@@ -7,7 +7,6 @@ $(document).ready(function() {
         }
     };
     
-    
     //check if currently off top, and if scroll brings to show area
     navbarCollapse();
     $(window).scroll(navbarCollapse);
