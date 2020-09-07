@@ -63,23 +63,24 @@ const Projects = (props) => {
                 <hr className="divider my-5 mx-5" />
                 <div className="row mt-4">
                     {/*  carousel wrapper  */}
-                    <div id="portfolio-carousel" className="carousel slide w-100" data-ride="carousel">
+                    <div id="projectCarousel" className="carousel slide w-100" data-ride="carousel">
                         {/* <!-- carousel indicators --> */}
                         <ol className="carousel-indicators">
-                            <li id="indicator-0" data-target="portfolio-carousel" data-slide-to="0" className="active"></li>
-                            <li id="indicator-1" data-target="portfolio-carousel" data-slide-to="1"></li>
+                            <li id="indicator-0" data-target="#projectCarousel" data-slide-to="0" className="active"></li>
+                            <li id="indicator-1" data-target="#projectCarousel" data-slide-to="1"></li>
                         </ol>
                         {/*  slides */}
-                        <div className="carousel-inner"></div>
-                        <ProjectSlide projects={[projectsState[0], projectsState[1], projectsState[2], projectsState[3]]} slide={0} active={true}/>
-                        <ProjectSlide projects={[projectsState[4], projectsState[5], projectsState[6], projectsState[7]]} slide={1} />
+                        <div className="carousel-inner">
+                            <ProjectSlide projects={[projectsState[0], projectsState[1], projectsState[2], projectsState[3]]} slide={0} active={true}/>
+                            <ProjectSlide projects={[projectsState[4], projectsState[5], projectsState[6], projectsState[7]]} slide={1} />
+                        </div>
 
-                        <a className="carousel-control-prev" href="#portfolio-carousel" role="button"
+                        <a id="carouselArrowLeft" className="carousel-control-prev" href="#projectCarousel" role="button"
                             data-slide="prev">
                             <span className="carousel-control-prev-icon p-0 m-0" aria-hidden="true"></span>
                             <span className="sr-only">Previous</span>
                         </a>
-                        <a className="carousel-control-next p-0 m-0" href="#portfolio-carousel" role="button"
+                        <a className="carousel-control-next p-0 m-0" href="#projectCarousel" role="button"
                             data-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="sr-only">Next</span>

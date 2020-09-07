@@ -7,7 +7,7 @@ const Masthead = () => {
                 <div className="row h-100 align-items-center">
                     <div className="col-12 text-center">
                         <h1 className="font-weight-light">Shawn Wright</h1>
-                        <p className="lead">A writer of code. A chaser of dreams.</p>
+                        <p className="lead">Writer of code. Chaser of dreams.</p>
                     </div>
                 </div>
             </div>

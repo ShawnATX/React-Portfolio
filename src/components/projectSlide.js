@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Project from "./project";
 
 const ProjectSlide = (props) => {
@@ -10,7 +10,8 @@ const ProjectSlide = (props) => {
                 (
                     <div className="carousel-item active" data-slide-to={props.slide}>
                         <div className="row">
-                            {props.projects.map((project) => <Project project={project} key={project.name} />)}
+                            {props.projects.map((project) => 
+                                <Project project={project} key={project.name} />)}
                         </div>
                     </div>
                 ) : (
