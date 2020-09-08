@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ProjectSlide from "./projectSlide";
 
 
+
 const Projects = (props) => {
     //can use state to populate projects from external source in future
     const [projectsState] = useState([
