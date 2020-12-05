@@ -59,7 +59,7 @@ const Projects = (props) => {
 
     return (
         <section className="page-section bg-brand" id="portfolio">
-            <div className="container">
+            <div className="container-fluid">
                 <h2 className="text-center">My Portfolio</h2>
                 <hr className="divider my-5 mx-5" />
                 <div className="row mt-4">
@@ -71,7 +71,7 @@ const Projects = (props) => {
                             <li id="indicator-1" data-target="#projectCarousel" data-slide-to="1"></li>
                         </ol>
                         {/*  slides */}
-                        <div className="carousel-inner">
+                        <div className="carousel-inner mx-auto">
                             <ProjectSlide projects={[projectsState[0], projectsState[1], projectsState[2], projectsState[3]]} slide={0} active={true}/>
                             <ProjectSlide projects={[projectsState[4], projectsState[5], projectsState[6], projectsState[7]]} slide={1} />
                         </div>

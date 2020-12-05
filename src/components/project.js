@@ -20,19 +20,9 @@ const Project = (props) => {
         setShow(true);
         };
         
-
     return (
-        <div className="row">
-            <Modal
-                size="lg"
-                show={ show }
-                onHide={handleClose}>
-                <ModalHeader>
-                    <ModalTitle>{ project.name }</ModalTitle>
-                </ModalHeader>
-                <ModalBody>{ project.subtitle }</ModalBody>
-                <ModalFooter><button className="btn btn-secondary" onClick={handleClose}>Close</button></ModalFooter>
-            </Modal>
+        <div className="row mx-auto">
+
             <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                 <button type="button" className="btn" data-toggle="modal" onClick={handleShow}>
 
@@ -41,10 +31,23 @@ const Project = (props) => {
                         {project.name}
                     </h3>
                     <p className="text-muted">
-                        {project.subtitle}
+                        {/* {project.subtitle} */}
                     </p>
                 </button>
             </div>
+            <Modal
+                size="lg"
+                show={ show }
+                centered="true"
+                onHide={handleClose}
+            >
+                <ModalHeader>
+                    <ModalTitle
+                        as="h3">{ project.name }</ModalTitle>
+                </ModalHeader>
+                <ModalBody>{ project.subtitle }</ModalBody>
+                <ModalFooter><button className="btn btn-secondary" onClick={handleClose}>Close</button></ModalFooter>
+            </Modal>
         </div>
     );
 }
