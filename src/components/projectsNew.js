@@ -93,7 +93,7 @@ const Projects = (props) => {
                     {/* first tile */}
                     <div className="row mx-auto">
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
-                            <button type="button" className="btn" data-toggle="modal" onClick={ (e) => handleShow(0) }>
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(0)}>
 
                                 <i className={projectsState[0].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
@@ -106,7 +106,7 @@ const Projects = (props) => {
                         </div>
                         {/* second tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
-                        <button type="button" className="btn" data-toggle="modal" onClick={ (e) => handleShow(1) }>
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(1)}>
 
                                 <i className={projectsState[1].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
@@ -117,10 +117,10 @@ const Projects = (props) => {
                                 </p>
                             </button>
                         </div>
-                        
+
                         {/* third tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
-                        <button type="button" className="btn" data-toggle="modal" onClick={ (e) => handleShow(2) }>
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(2)}>
 
                                 <i className={projectsState[2].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
@@ -134,7 +134,7 @@ const Projects = (props) => {
 
                         {/* fourth tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
-                        <button type="button" className="btn" data-toggle="modal" onClick={ (e) => handleShow(3) }>
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(3)}>
 
                                 <i className={projectsState[3].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
@@ -148,17 +148,65 @@ const Projects = (props) => {
 
                     </div>
                 </Carousel.Item>
+                {/* second slide */}
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://www.fillmurray.com/800/400"
-                        alt="Third slide"
-                    />
+                    {/* first tile */}
+                    <div className="row mx-auto">
+                        <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(4)}>
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
+                                <i className={projectsState[4].icon}></i>
+                                <h3 className="mb-2 d-block w-100">
+                                    {projectsState[4].name}
+                                </h3>
+                                <p className="text-muted">
+                                    {/* {project.subtitle} */}
+                                </p>
+                            </button>
+                        </div>
+                        {/* second tile */}
+                        <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(5)}>
+
+                                <i className={projectsState[5].icon}></i>
+                                <h3 className="mb-2 d-block w-100">
+                                    {projectsState[5].name}
+                                </h3>
+                                <p className="text-muted">
+                                    {/* {project.subtitle} */}
+                                </p>
+                            </button>
+                        </div>
+
+                        {/* third tile */}
+                        <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(6)}>
+
+                                <i className={projectsState[6].icon}></i>
+                                <h3 className="mb-2 d-block w-100">
+                                    {projectsState[6].name}
+                                </h3>
+                                <p className="text-muted">
+                                    {/* {project.subtitle} */}
+                                </p>
+                            </button>
+                        </div>
+
+                        {/* fourth tile */}
+                        <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
+                            <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(7)}>
+
+                                <i className={projectsState[7].icon}></i>
+                                <h3 className="mb-2 d-block w-100">
+                                    {projectsState[7].name}
+                                </h3>
+                                <p className="text-muted">
+                                    {/* {project.subtitle} */}
+                                </p>
+                            </button>
+                        </div>
+
+                    </div>
                 </Carousel.Item>
             </Carousel>
         </section>
