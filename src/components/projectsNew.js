@@ -100,7 +100,6 @@ const Projects = (props) => {
                                     {projectsState[0].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
@@ -113,7 +112,6 @@ const Projects = (props) => {
                                     {projectsState[1].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
@@ -127,7 +125,6 @@ const Projects = (props) => {
                                     {projectsState[2].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
@@ -141,7 +138,6 @@ const Projects = (props) => {
                                     {projectsState[3].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
@@ -160,7 +156,6 @@ const Projects = (props) => {
                                     {projectsState[4].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
@@ -173,7 +168,6 @@ const Projects = (props) => {
                                     {projectsState[5].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
@@ -187,7 +181,6 @@ const Projects = (props) => {
                                     {projectsState[6].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
@@ -201,7 +194,6 @@ const Projects = (props) => {
                                     {projectsState[7].name}
                                 </h3>
                                 <p className="text-muted">
-                                    {/* {project.subtitle} */}
                                 </p>
                             </button>
                         </div>
