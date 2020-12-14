@@ -7,15 +7,6 @@ $(document).ready(function() {
           $("#navbar").removeClass("navbar-show");
         }
     };
-
-    $("#projectCarousel").carousel();
-    
-    $("#indicator-0").click(function(){
-        $("#projectCarousel").carousel(0);
-      });
-    $("#indicator-1").click(function(){
-        $("#projectCarousel").carousel(1);
-      });
     
     //check if currently off top, and if scroll brings to show area
     navbarCollapse();

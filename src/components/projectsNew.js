@@ -14,43 +14,50 @@ const Projects = (props) => {
             link: "https://fantasy-bazaar.herokuapp.com/",
             name: "Fantasy Bazaar",
             subtitle: "React PWA for Tabletop RPG games",
-            icon: "fas fa-store-alt fa-4x"
+            icon: "fas fa-store-alt fa-4x",
+            image: "http://myfunnymemes.com/wp-content/uploads/2015/04/Doge-Meme-Lion-In-All-Its-Majestic-Glory.jpg"
         },
         {
             link: "https://shawnatx.github.io/project-1/",
             name: "Cocktail Bar",
             subtitle: "Fancy trying a new drink?",
-            icon: "fas fa-cocktail fa-4x"
+            icon: "fas fa-cocktail fa-4x",
+            image: "http://www.fillmurray.com/400/500"
         },
         {
             link: "https://shawnatx.github.io/Daily-Scheduler/",
             name: "Daily Schedule App",
             subtitle: "Keep it all together.",
-            icon: "fas fa-calendar-alt fa-4x"
+            icon: "fas fa-calendar-alt fa-4x",
+            image: "http://www.fillmurray.com/400/400"
         },
         {
             link: "https://shawnatx.github.io/JS-password-generator/",
             name: "Password Generator",
             subtitle: "Client-side safety.",
-            icon: "fas fa-unlock-alt fa-4x"
+            icon: "fas fa-unlock-alt fa-4x",
+            image: "http://www.fillmurray.com/500/500"
         },
         {
             link: "https://github.com/ShawnATX/node-readme-generator",
             name: "README Generator",
             subtitle: "Documentation is key.",
-            icon: "fab fa-markdown fa-4x"
+            icon: "fab fa-markdown fa-4x",
+            image: "http://www.fillmurray.com/500/600"
         },
         {
             link: "https://shawnatx.github.io/Weather-Dashboard/",
             name: "Weather Dashboard",
             subtitle: "Stay ahead of the game.",
-            icon: "fas fa-cloud-sun-rain fa-4x"
+            icon: "fas fa-cloud-sun-rain fa-4x",
+            image: "http://www.fillmurray.com/500/600" 
         },
         {
             link: "https://dry-woodland-14799.herokuapp.com/index",
             name: "Burger Database",
             subtitle: "Consume mass quantities.",
-            icon: "fas fa-hamburger fa-4x"
+            icon: "fas fa-hamburger fa-4x",
+            image: "http://www.fillmurray.com/576/575"
         },
         {
             link: "https://shawnatx.github.io/Speed-Reading-Game/",
@@ -62,6 +69,7 @@ const Projects = (props) => {
 
     const [show, setShow] = useState(false);
 
+    //an integer value representing projects in projectState to be passed to the modal when opened
     const [modalContent, setModalContent] = useState(0);
 
     const handleClose = () => {
@@ -75,16 +83,26 @@ const Projects = (props) => {
     return (
         <section className="page-section bg-brand" id="portfolio">
             <Modal
-                size="lg"
+                size="xl"
                 show={show}
                 centered="true"
                 onHide={handleClose}
+                id="modal"
             >
                 <ModalHeader>
                     <ModalTitle
                         as="h3">{projectsState[modalContent].name}</ModalTitle>
                 </ModalHeader>
-                <ModalBody>{projectsState[modalContent].subtitle}</ModalBody>
+                <ModalBody 
+                    id="modal-body"
+                    style={{
+                        backgroundImage: `url(${projectsState[modalContent].image})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        height: "35rem"
+                    }}
+                >
+                    {projectsState[modalContent].subtitle}</ModalBody>
                 <ModalFooter><button className="btn btn-secondary" onClick={handleClose}>Close</button></ModalFooter>
             </Modal>
             <Carousel>

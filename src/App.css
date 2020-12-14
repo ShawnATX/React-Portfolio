@@ -11,6 +11,50 @@ h5 {
   font-size: xx-large;
 }
 
+
+
+.navbar-show {
+  background-color: whitesmoke !important;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('./img/workbench.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-section {
+  padding: 6rem 0;
+}
+
+/* .modal-body {
+  background-image: url('http://myfunnymemes.com/wp-content/uploads/2015/04/Doge-Meme-Lion-In-All-Its-Majestic-Glory.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+} */
+
+.carousel-indicators{
+  bottom: -5rem;
+}
+
+.carousel-control-prev{
+  display: none;
+}
+.carousel-control-next{
+  display: none;
+}
+
+.brand-color{
+  color: #59AAA5 !important;
+}
+
+.bg-brand{
+  background-color: #59AAA5 !important;
+}
+
 #navbar {
   overflow: hidden;
   background-color: transparent;
@@ -36,41 +80,6 @@ h5 {
 #navbar #logo {
   font-size: 37px;
   font-weight: bold;
-}
-
-.navbar-show {
-  background-color: whitesmoke !important;
-}
-
-.masthead {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url('./img/workbench.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.page-section {
-  padding: 6rem 0;
-}
-
-.carousel-indicators{
-  bottom: -5rem;
-}
-
-.carousel-control-prev{
-display: none;
-}
-.carousel-control-next{
-  display: none;
-}
-
-.brand-color{
-  color: #59AAA5 !important;
-}
-
-.bg-brand{
-  background-color: #59AAA5 !important;
 }
 
 #portfolio{
