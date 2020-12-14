@@ -64,7 +64,6 @@ const Projects = (props) => {
 
     const [modalContent, setModalContent] = useState(0);
 
-
     const handleClose = () => {
         setShow(false);
     };
@@ -90,8 +89,8 @@ const Projects = (props) => {
             </Modal>
             <Carousel>
                 <Carousel.Item interval={null}>
-                    {/* first tile */}
                     <div className="row mx-auto">
+                        {/* first tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(0)}>
 
@@ -146,8 +145,8 @@ const Projects = (props) => {
                 </Carousel.Item>
                 {/* second slide */}
                 <Carousel.Item>
-                    {/* first tile */}
                     <div className="row mx-auto">
+                        {/* first tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(4)}>
 

@@ -54,12 +54,16 @@ h5 {
   padding: 6rem 0;
 }
 
-/* .carousel-control-prev{
-  left: -5rem !important;
+.carousel-indicators{
+  bottom: -5rem;
+}
+
+.carousel-control-prev{
+display: none;
 }
 .carousel-control-next{
-  right: -5rem !important;
-} */
+  display: none;
+}
 
 .brand-color{
   color: #59AAA5 !important;
@@ -67,5 +71,9 @@ h5 {
 
 .bg-brand{
   background-color: #59AAA5 !important;
+}
 
+#portfolio{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
