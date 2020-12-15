@@ -15,21 +15,21 @@ const Projects = (props) => {
             name: "Fantasy Bazaar",
             subtitle: "React PWA for Tabletop RPG games",
             icon: "fas fa-store-alt fa-4x",
-            image: "http://myfunnymemes.com/wp-content/uploads/2015/04/Doge-Meme-Lion-In-All-Its-Majestic-Glory.jpg"
+            image: "http://www.fillmurray.com/1280/720"
         },
         {
             link: "https://shawnatx.github.io/project-1/",
             name: "Cocktail Bar",
             subtitle: "Fancy trying a new drink?",
             icon: "fas fa-cocktail fa-4x",
-            image: "http://www.fillmurray.com/400/500"
+            image: "http://www.fillmurray.com/1280/730"
         },
         {
             link: "https://shawnatx.github.io/Daily-Scheduler/",
             name: "Daily Schedule App",
             subtitle: "Keep it all together.",
             icon: "fas fa-calendar-alt fa-4x",
-            image: "http://www.fillmurray.com/400/400"
+            image: "http://www.fillmurray.com/1200/700"
         },
         {
             link: "https://shawnatx.github.io/JS-password-generator/",
@@ -88,22 +88,27 @@ const Projects = (props) => {
                 centered="true"
                 onHide={handleClose}
                 id="modal"
+                interval="10000"
             >
                 <ModalHeader>
                     <ModalTitle
-                        as="h3">{projectsState[modalContent].name}</ModalTitle>
+                        as="h3" className="mx-auto">{projectsState[modalContent].name}</ModalTitle>
                 </ModalHeader>
                 <ModalBody 
                     id="modal-body"
-                    style={{
-                        backgroundImage: `url(${projectsState[modalContent].image})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        height: "35rem"
-                    }}
+                    // style={{
+                    //     backgroundImage: `url(${projectsState[modalContent].image})`,
+                    //     backgroundRepeat: "no-repeat",
+                    //     backgroundSize: "cover",
+                    //     height: "35rem"
+                    // }}
                 >
-                    {projectsState[modalContent].subtitle}</ModalBody>
-                <ModalFooter><button className="btn btn-secondary" onClick={handleClose}>Close</button></ModalFooter>
+                    <img className="img-fluid mx-auto" src={projectsState[modalContent].image} /> 
+                    </ModalBody>
+                <ModalFooter>
+                    {projectsState[modalContent].subtitle}
+                    <button className="btn btn-secondary" onClick={handleClose}>Close</button>
+                </ModalFooter>
             </Modal>
             <Carousel>
                 <Carousel.Item interval={null}>
