@@ -55,6 +55,10 @@ h5 {
   background-color: #59AAA5 !important;
 }
 
+#modal-header{
+  padding: 0rem, 1rem !important;
+}
+
 #navbar {
   overflow: hidden;
   background-color: transparent;

@@ -15,55 +15,56 @@ const Projects = (props) => {
             name: "Fantasy Bazaar",
             subtitle: "React PWA for Tabletop RPG games",
             icon: "fas fa-store-alt fa-4x",
-            image: "http://www.fillmurray.com/1280/720"
+            image: "http://via.placeholder.com/1280x780"
         },
         {
             link: "https://shawnatx.github.io/project-1/",
             name: "Cocktail Bar",
             subtitle: "Fancy trying a new drink?",
             icon: "fas fa-cocktail fa-4x",
-            image: "http://www.fillmurray.com/1280/730"
+            image: "http://via.placeholder.com/1280x780"
         },
         {
             link: "https://shawnatx.github.io/Daily-Scheduler/",
             name: "Daily Schedule App",
             subtitle: "Keep it all together.",
             icon: "fas fa-calendar-alt fa-4x",
-            image: "http://www.fillmurray.com/1200/700"
+            image: "http://via.placeholder.com/1280x780"
         },
         {
             link: "https://shawnatx.github.io/JS-password-generator/",
             name: "Password Generator",
             subtitle: "Client-side safety.",
             icon: "fas fa-unlock-alt fa-4x",
-            image: "http://www.fillmurray.com/500/500"
+            image: "http://via.placeholder.com/1280x780"
         },
         {
             link: "https://github.com/ShawnATX/node-readme-generator",
             name: "README Generator",
             subtitle: "Documentation is key.",
             icon: "fab fa-markdown fa-4x",
-            image: "http://www.fillmurray.com/500/600"
+            image: "http://via.placeholder.com/1280x780"
         },
         {
             link: "https://shawnatx.github.io/Weather-Dashboard/",
             name: "Weather Dashboard",
             subtitle: "Stay ahead of the game.",
             icon: "fas fa-cloud-sun-rain fa-4x",
-            image: "http://www.fillmurray.com/500/600" 
+            image: "http://via.placeholder.com/1280x780" 
         },
         {
             link: "https://dry-woodland-14799.herokuapp.com/index",
             name: "Burger Database",
             subtitle: "Consume mass quantities.",
             icon: "fas fa-hamburger fa-4x",
-            image: "http://www.fillmurray.com/576/575"
+            image: "http://via.placeholder.com/1280x780"
         },
         {
             link: "https://shawnatx.github.io/Speed-Reading-Game/",
             name: "Speed Reading Game",
             subtitle: "With a poetic twist.",
-            icon: "fas fa-book-reader fa-4x"
+            icon: "fas fa-book-reader fa-4x",
+            image: "http://via.placeholder.com/1280x780"
         },
     ]);
 
@@ -88,25 +89,17 @@ const Projects = (props) => {
                 centered="true"
                 onHide={handleClose}
                 id="modal"
-                interval="10000"
+                interval="11111"
             >
-                <ModalHeader>
+                <ModalHeader id="modal-header">
                     <ModalTitle
-                        as="h3" className="mx-auto">{projectsState[modalContent].name}</ModalTitle>
+                        as="h2" className="mx-auto">{projectsState[modalContent].name}</ModalTitle>
                 </ModalHeader>
-                <ModalBody 
-                    id="modal-body"
-                    // style={{
-                    //     backgroundImage: `url(${projectsState[modalContent].image})`,
-                    //     backgroundRepeat: "no-repeat",
-                    //     backgroundSize: "cover",
-                    //     height: "35rem"
-                    // }}
-                >
-                    <img className="img-fluid mx-auto" src={projectsState[modalContent].image} /> 
+                <ModalBody id="modal-body">
+                    <img alt="Project screenshot" className="img-fluid mx-auto" src={projectsState[modalContent].image} /> 
                     </ModalBody>
                 <ModalFooter>
-                    {projectsState[modalContent].subtitle}
+                    <span className="tagline">{projectsState[modalContent].subtitle}</span>
                     <button className="btn btn-secondary" onClick={handleClose}>Close</button>
                 </ModalFooter>
             </Modal>
@@ -116,7 +109,6 @@ const Projects = (props) => {
                         {/* first tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(0)}>
-
                                 <i className={projectsState[0].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[0].name}
@@ -128,7 +120,6 @@ const Projects = (props) => {
                         {/* second tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(1)}>
-
                                 <i className={projectsState[1].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[1].name}
@@ -141,7 +132,6 @@ const Projects = (props) => {
                         {/* third tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(2)}>
-
                                 <i className={projectsState[2].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[2].name}
@@ -154,7 +144,6 @@ const Projects = (props) => {
                         {/* fourth tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(3)}>
-
                                 <i className={projectsState[3].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[3].name}
@@ -163,7 +152,6 @@ const Projects = (props) => {
                                 </p>
                             </button>
                         </div>
-
                     </div>
                 </Carousel.Item>
                 {/* second slide */}
@@ -172,7 +160,6 @@ const Projects = (props) => {
                         {/* first tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(4)}>
-
                                 <i className={projectsState[4].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[4].name}
@@ -184,7 +171,6 @@ const Projects = (props) => {
                         {/* second tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(5)}>
-
                                 <i className={projectsState[5].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[5].name}
@@ -197,7 +183,6 @@ const Projects = (props) => {
                         {/* third tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(6)}>
-
                                 <i className={projectsState[6].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[6].name}
@@ -210,7 +195,6 @@ const Projects = (props) => {
                         {/* fourth tile */}
                         <div className="col-lg-3 col-md-6 col-sm-12 text-center mx-auto">
                             <button type="button" className="btn" data-toggle="modal" onClick={(e) => handleShow(7)}>
-
                                 <i className={projectsState[7].icon}></i>
                                 <h3 className="mb-2 d-block w-100">
                                     {projectsState[7].name}
